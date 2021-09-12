@@ -1,0 +1,164 @@
+@media screen and (max-width: 1860px) {
+    .bgimg{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1490px) {
+    .imgcontainer{
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        overflow: visible;
+        padding: 48px 16px;
+        z-index: 1000;
+    }
+    .setting_custom_bg{
+        float: left;
+        width: 49%;
+        margin:0 auto ;
+        box-shadow: -3px 0 3px rgba(216,216,216,0.6),3px 0 3px rgba(216,216,216,0.6);
+    }
+
+    .setting_commonstyle{
+        float: right;
+        width: 49%;
+        margin:0 auto ;
+    }
+    .btn_setting_something{
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn_fold_img{
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 1400px){
+    .__sign_left{
+        left: -100%;
+        transition: 2s;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .setting_custom_bg,.setting_commonstyle{
+        float: none;
+        margin:0 auto ;
+        box-shadow: none;
+        width: 530px;
+        height: 700px;
+        overflow: hidden !important;
+    }
+}
+@media screen and (max-width: 620px){
+    .engine_change ,#links, #user_search_area,.associate_show_box{
+        width: 100%;
+        padding:0 16px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .footer{
+        display: none !important;
+    }
+    .setting_custom_bg{
+        width: 100%;
+        height: 640px;
+    }
+    .setting_commonstyle{
+        width: 100%;
+        height: 640px;
+    }
+    .setting_item_body{
+        padding: 0;
+    }
+    .setting_item_title{
+        margin: 16px 0;
+    }
+    .dialog_box{
+        
+        width: 300px;
+        font-size: 16px;
+    }
+    .preview_box{
+        height: 250px;
+    }
+    .links_td,.links_td:nth-child(5n){
+        margin-right: calc((100% - 345px) / 3);
+    }
+    .links_td:nth-child(4n){
+        margin-right: 0;
+    }
+    .sign_edit_diolog_box_show,.sign_edit_diolog_box_show,.link_edit_diolog_box_show,.link_create_box_show{
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+        animation: min_show_edit_diolog 1s ease-in;
+    }
+}
+@media screen and (max-width: 440px){
+    .engine_item{
+        margin-left:16px;
+    }
+}
+@media screen and (max-width: 404px){
+    .bgimg{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width: 360px){
+    .engine_item>span{
+        display: none;
+    }
+    .links_td,.links_td:nth-child(5n),.links_td:nth-child(4n){
+        margin-right: calc((100% - 260px) / 2);
+    }
+    .links_td:nth-child(3n){
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-height:800px){
+    .icon_pen,.btn_text{
+        display: none;
+    }
+    .menu_right{
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu_right>span{
+        display:inline-block;
+    }
+    #btn_to_setting{
+        top: 10px;
+        right: 4px;
+        height: auto;
+        width: auto;
+        bottom:auto;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        background-color:transparent;
+    }
+    #btn_to_setting:hover{
+        background-color:transparent;
+    }
+}
+@media screen and (max-height:772px){
+    .setting_custom_bg,.setting_commonstyle{
+        overflow: auto;
+    }
+    #time_show{
+        display: none !important;
+    }
+}
+@media screen and (max-height:680px){
+    .engine_change{
+        top: 60px;
+    }
+    #user_search_area{
+        top: 60px;
+    }
+    #links{
+        top: 80px;
+    }
+}

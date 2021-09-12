@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  user-select: none;
+  outline: none;
+  resize: none;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+/* input range 颜色 */
+input[type="range"] {
+  margin: 0;
+  appearance: unset;
+  border-radius: 2px;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: unset;
+  height: 14px;
+  width: 14px;
+  background-color: #fff;
+  box-shadow: 0 0 2px #000;
+  border-radius: 50%;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;    
+  /*height: 4px;*/
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px rgba(127,127,127,0.2);
+  background: rgba(127,127,127,0.8);
+}
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(127,127,127,0.2);
+  border-radius: 3px;
+  background: rgba(127,127,127,0.2);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex>div {
+  flex: 1;
+}
+
+.flex_around_center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex_between_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_column_center>div {
+  flex: 1;
+}
+
+
+/* <div id="input_file"><input id="input_tochoose_pic" type="file"><div id="input_style_cover">选择图片</div></div> */
+#input_file{
+  position: relative;
+  display: inline-block;
+}
+#input_style_cover{
+  padding: 4px 1em;
+  height: 100%;
+  width: 100%;
+}
+#input_tochoose_pic{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+}

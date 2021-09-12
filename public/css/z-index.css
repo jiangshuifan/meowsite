@@ -1,0 +1,50 @@
+
+/*背景图层*/
+#background_container{
+    z-index: -10;
+}
+#snow_canvas{
+    z-index:-8;
+}
+
+/*快捷链接 */
+.searchlink{
+    z-index: -3;
+}
+
+#links{
+    z-index: 250;
+}
+.common_html_cover_s{
+    z-index: 300;
+}
+#user_search_area,.engine_change,#time_show,#btn_to_setting{
+    z-index:400; 
+}
+.__sign_left {
+    z-index: 450;
+}
+
+.btn_fold_sign{
+    z-index: 460;
+}
+/* 覆盖层 */
+.common_html_cover{
+    z-index:500;
+}
+
+.sign_edit_diolog_box,.link_create,
+.link_edit_diolog_box{
+    z-index: 600; 
+}
+
+
+.style_setting_alert{
+    z-index: 999;
+}
+
+/*提示交互框*/
+.dialog_box{
+    z-index: 99999999999999999;
+}
+

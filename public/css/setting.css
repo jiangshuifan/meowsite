@@ -1,0 +1,319 @@
+.setting_commonstyle,.setting_custom_bg,.imgcontainer{
+    height: 98%;
+}
+.setting_commonstyle{
+    margin-left:calc(100% - 1076px);
+    width: 530px;
+    padding: 16px;
+    box-shadow: -3px 0 3px rgba(216,216,216,0.6),3px 0 3px rgba(216,216,216,0.6);
+}
+.setting_custom_bg{
+    position: relative;
+    padding: 16px;
+    float: right;
+    width: 530px;
+    box-shadow: -3px 0 3px rgba(216,216,216,0.6);
+    overflow: auto;
+}
+.imgcontainer{
+    transition: 2s;
+    float: left;
+    box-shadow: 3px 0  3px rgba(216,216,216,0.6);
+    width: calc(100% - 1092px);
+    padding: 28px 12px 28px 0;
+    background-color: white;
+}
+.bgsetting_position{
+    height: 100%;
+    padding: 1% 8px;
+    overflow-y: auto;
+}
+.style_setting_alert{
+    transition: 2s;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slideDown{
+    transition: 2s;
+    height: 100%;
+
+}
+
+.bgimg_position{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    -webkit-overflow-scrolling: touch 
+}
+.bgimg{
+    height: 225px;
+    width: 364px;
+    border: 1px solid rgba(255,255,255,0);
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 5px;
+    /* background-color: rgba(0,255,0,0.4); */
+    cursor: pointer;
+}
+.bgimg:nth-child(1),.bgimg:nth-child(2){
+    margin-top: 0;
+}
+.bgimg:nth-child(2n){
+    margin-right: 0;
+}
+.bgimg:hover,.imgactive{
+    border: 1px solid rgba(255,255,255,1);
+    box-shadow: 0 0 15px rgba(54,54,54,0.8),2px 0 15px rgba(54,54,54,0.8);
+}
+.setting_header{
+    margin: 16px;
+    font-size: 28px;
+    text-align: center;
+}
+.setting_item{
+    margin: 16px 0;
+}
+.setting_item_title{
+    font-size: 20px;
+    margin: 32px 16px;
+}
+.set_color_value .text_input{
+    color:rgba(54, 54, 54, 0.6);
+    width: 150px;
+    background-color: inherit;
+    padding:4px 16px;
+    border: none;
+    border-bottom: 1px solid rgba(150,150,150, 0.7);
+
+}.set_color_note{
+    width: 400px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.color_adjust{
+    height: 200px;
+}
+.color_adjust>div{
+    flex: 1;
+}
+.color_effect_show{
+    align-items: center;
+}
+.color_effect{
+    width: 400px;
+    flex: 1;
+    border:  1px solid rgba(255,255,255, 1);
+    position: relative;
+    padding: 3px;
+}
+.color_effect::after,.color_effect::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width:40px;
+}
+.color_effect::before{
+    left: 0;
+    top: 0;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+}
+.color_effect::after{
+    right: 0;
+    bottom: 0;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.color_effect_font{
+    font-weight: bold;
+}
+.color_range{
+    background-image: linear-gradient(
+        90deg,
+        #f00,
+        #ff0,
+        #0f0,
+        #0ff,
+        #00f,
+        #f0f,
+        #f00
+      );
+      width: 100%;
+      height: 4px;
+}
+.opacity_range{
+      width: 100%;
+      height: 4px;
+}
+
+.set_color_value{
+    width: 100%;
+}
+
+.reset_sign{
+    height: 100px;
+    width: 100%;
+    padding:16px 8px;
+    text-indent: 2em;
+    word-break: break-all;
+    word-wrap: break-word;
+    resize: none;
+    border: 1px solid #999;
+    background-color: rgba(240,240,240, 0.8);
+    color: rgba(54, 54, 54, 0.6);
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-family: 'cursive';
+    
+}
+.setting_btn_operate>button{
+    width: 110px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.setting_btn_operate{
+    display: flex;
+    justify-content: space-between;
+}
+.setting_btn_signcreate{
+    background-color: rgba(0,255,142,0.55);
+  }
+  .setting_btn_cancel{
+    background-color: rgba(57,57,57,0.55);
+  }
+  .setting_btn_signcreate:hover{
+    background-color: rgba(0,255,142,0.8);
+  }
+  .setting_btn_cancel:hover{
+    background-color: rgba(57,57,57,0.8);
+  }
+  .setting_btn_save{
+    background-color: rgba(0,124,255,0.55);
+  }
+  .setting_btn_save:hover{
+    background-color: rgba(0,124,255,0.8);
+  }
+  .color_rgb{
+      user-select:all;
+  }
+  .btn_set_font_rgba{
+      width: 110px;
+      height: 50px;
+      color: white;
+      border: 1px solid white;
+      background-color: rgba(255,40,0,0.55);
+  }
+  .btn_set_font_rgba:hover{
+    background-color: rgba(255,40,0,0.8);
+  }
+
+
+  .menu_right{
+    display: none;
+    width: 36px;
+    align-items: center;
+    height: 30px;
+  }
+
+  .menu_right>span{
+    display: none;
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+    background-color:#00edff ;
+  }
+  #btn_to_setting{
+    position: fixed;
+    height: 30px;
+    width: 80px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 1px black;
+    background-color:rgba(150,150,150, 0.7);
+    right: 20px;
+    bottom: 60px;
+    cursor: pointer;
+    display: flex;
+}
+#btn_to_setting:hover{
+    background-color:rgb(54,54,54);
+}
+.icon_pen{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.btn_text{
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    flex: 1;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+/* 背景图片预览区 */
+
+.preview_box{
+    width: 100%;
+    height: 324px;
+    overflow-y: auto;
+}
+.preview_box>img{
+    width: 100%;
+}
+.pic_select{
+    background-color: red;
+    color: white;
+}
+.setting_item_body{
+    padding:0 50px;
+}
+.setting_item_body>div{
+    margin-bottom: 16px;
+}
+.setting_item_body>div:last-child{
+    margin-bottom: 0;
+}
+.input_file_name{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 2em;
+}
+.imgs_unfold{
+    left: 0 !important;
+    transition: 2s;
+}
+.btn_fold_img{
+    display: none;
+    position: absolute;
+    top:16px ;
+    right: 16px;
+}
+.btn_setting_something{
+    display: none;
+}

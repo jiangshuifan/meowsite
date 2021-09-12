@@ -1,0 +1,60 @@
+.dialog_box{
+  height: 48px;
+  width: 500px;
+  position: absolute;
+  display: none;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 28px;
+  border-radius: 24px;
+  text-shadow:0 2px 1px rgba(168,168,168,0.6);
+  }
+
+  .dialog_alter_success{
+    top: 300px;
+    color: rgb(94, 255, 1); 
+  }
+  .dialog_alter_defeat{
+    top: 300px;
+    color: rgb(255,28,0);
+  }
+  .dialog_save_success{
+    top: 300px;
+    color: rgb(76, 0, 255);
+  }
+  .dialog_save_defeat{
+    top: 300px;
+    color: rgb(255, 174, 0);
+  }
+  .dialog_update_success{
+    color: rgb(0, 255, 149);
+  }
+  .dialog_linkadd_defeat{
+    color: rgb(246, 18, 132);
+  }
+  .dialog_linkadd_success{
+    color: rgb(236, 131, 89);
+  }
+  .dialog_create_defeat{
+    color: rgb(145,0,255);
+  }
+  .dialog_create_success{
+    color: rgb(0,255,184);
+  }
+  .dialog_linkupdate_success{
+    color: rgb(0,96,255);
+  }
+  .fadeOut_name{
+    animation: fadeout 3s ease;
+    justify-content: center;
+    align-items: center;
+  }
+  @keyframes fadeout 
+  {
+    from {top: 300px;opacity: 1;}
+    to {top:200px;opacity: 0;}
+  }
+  @-webkit-keyframes fadeout{
+    from {top: 300px;opacity: 1;}
+    to {top:200px;opacity: 0;}
+  }
